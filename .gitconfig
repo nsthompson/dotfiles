@@ -1,0 +1,16 @@
+[user]
+name = Nick Thompson
+email = 13121431+nsthompson@users.noreply.github.com
+
+[push]
+autoSetupRemote = true
+
+# Some Helpful configs from https://www.youtube.com/watch?v=aolI_Rz0ZqY
+[branch]
+sort = -committerdate
+
+[column]
+ui = auto
+
+[alias]
+staash = 'stash --all'
