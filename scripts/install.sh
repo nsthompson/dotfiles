@@ -26,5 +26,5 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH
 #cp ./.zshrc ~
 
 echo "Linking dotfiles.."
-stow .
+stow . -t ~
 
