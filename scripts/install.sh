@@ -12,7 +12,6 @@ cd fonts
 ./install.sh
 cd .. && rm -rf fonts
 
-
 echo "Installing ohmyzsh and plugins..."
 
 # oh-my-zsh & plugins
@@ -25,6 +24,11 @@ zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH
 #echo "Copying zshrc to ~/.zshrc..."
 #cp ./.zshrc ~
 
+echo "Cleaning up default dotfiles..."
+rm ~/.zshrc
+rm ~/.zprofile
+rm ~/.gitconfig
+
 echo "Linking dotfiles.."
-stow . -t ~
+stow .
 
