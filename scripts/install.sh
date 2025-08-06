@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Starting dotfiles install.sh..."
+echo "Starting dotfiles scripts/install.sh..."
 
-echo "Copying gitconfig to ~/.gitconfig..."
-cp ./.gitconfig ~
+#echo "Copying gitconfig to ~/.gitconfig..."
+#cp ./.gitconfig ~
 
 echo "Installing powerline fonts for zsh agnoster theme..."
 # powerline fonts for zsh agnoster theme
@@ -22,5 +22,9 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
 zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
 
-echo "Copying zshrc to ~/.zshrc..."
-cp ./.zshrc ~
+#echo "Copying zshrc to ~/.zshrc..."
+#cp ./.zshrc ~
+
+echo "Linking dotfiles.."
+stow .
+
