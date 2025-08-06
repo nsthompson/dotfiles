@@ -29,6 +29,6 @@ rm ~/.zshrc
 rm ~/.zprofile
 rm ~/.gitconfig
 
-echo "Linking dotfiles.."
+echo "Linking dotfiles..."
 stow .
 
