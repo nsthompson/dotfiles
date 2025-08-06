@@ -35,3 +35,8 @@ alias kctx="kubectx"
 alias kns="kubens"
 
 prompt_context() {}
+
+if [ -d ~/.lmstudio/bin ]
+then
+  export PATH="$PATH:~/.lmstudio/bin"
+fi
