@@ -40,3 +40,15 @@ if [ -d ~/.lmstudio/bin ]
 then
   export PATH="$PATH:~/.lmstudio/bin"
 fi
+
+if [ -d ~/.orbstack/bin ]
+then
+  export PATH="$PATH:~/.orbstack/bin"
+  fpath+=/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh
+fi
+
+if [ -d ~/.local/bin ]
+then
+  export PATH="$PATH:~/.local/bin"
+fi
+
