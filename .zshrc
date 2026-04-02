@@ -38,18 +38,18 @@ prompt_context() {}
 
 if [ -d ~/.lmstudio/bin ]
 then
-  export PATH="$PATH:~/.lmstudio/bin"
+  export PATH="$PATH:$HOME/.lmstudio/bin"
 fi
 
 if [ -d ~/.orbstack/bin ]
 then
-  export PATH="$PATH:~/.orbstack/bin"
+  export PATH="$PATH:$HOME/.orbstack/bin"
   fpath+=/Applications/OrbStack.app/Contents/MacOS/../Resources/completions/zsh
 fi
 
 if [ -d ~/.local/bin ]
 then
-  export PATH="$PATH:~/.local/bin"
+  export PATH="$PATH:$HOME/.local/bin"
 fi
 
 eval "$(uv generate-shell-completion zsh)"
