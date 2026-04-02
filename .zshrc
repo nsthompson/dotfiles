@@ -52,3 +52,4 @@ then
   export PATH="$PATH:~/.local/bin"
 fi
 
+eval "$(uv generate-shell-completion zsh)"
